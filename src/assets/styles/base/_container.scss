@@ -1,0 +1,37 @@
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+
+	@include media-phablet {
+		width: 540px;
+	}
+
+	@include media-tablet {
+		width: 720px;
+	}
+	@include media-phablet {
+		padding: 0 3rem;
+	}
+
+	@include media-laptop {
+		width: 960px;
+	}
+
+	@include media-desktop {
+		width: 1140px;
+	}
+
+	@include media-tv {
+		width: 1320px;
+	}
+
+	section:not(.hero),
+	footer {
+		padding: 7rem 0;
+
+		.headline {
+			margin-top: 0;
+		}
+	}
+}

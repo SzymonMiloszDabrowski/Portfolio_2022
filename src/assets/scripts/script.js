@@ -1,12 +1,17 @@
+import '../styles/style.scss';
+
 const App = {
 	handleHamburger: function () {
 		const nav = document.querySelector('header nav');
 		const list = document.querySelector('header nav ul');
+		const hamburger = document.querySelector('.hamburger');
 
 		if (nav.classList.contains('toggled')) {
 			list.removeAttribute('style');
+			hamburger.setAttribute('aria-expanded', false);
 		} else {
 			list.style.height = list.scrollHeight + 'px';
+			hamburger.setAttribute('aria-expanded', true);
 		}
 		nav.classList.toggle('toggled');
 	},

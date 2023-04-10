@@ -3,19 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width" />
-		<link rel="stylesheet" href="/styles/css/style.css" />
-		<link rel="stylesheet" href="/fontello/css/fontello.css" />
-		<link rel="icon" href="img/favicon.svg" type="image/svg" />
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=5" />
+		<meta name="description" content="Tworzenie stron w najlepszym wyadniu! Sprawdź projekty stron i aplikacji internetowych. inż. Szymon Dąbrowski" />
 		<title>Szymon Dąbrowski - Portfolio</title>
-		<script defer src="app.js"></script>
+		<link href="./assets/images/heroSVG.svg" rel="preload" as="image" type="image/png" fetchpriority="high" />
+		<link rel="icon" href="./assets/images/favicon.svg" type="image/svg" />
 	</head>
 	<body>
 		<div class="container">
-			<header class="fixed">
+			<header class="container fixed">
 				<nav>
 					<a href="/" class="logo">szymon.dev</a>
-					<button class="hamburger">
+					<button class="hamburger" aria-label="Menu" aria-expanded="false">
 						<span class="hamburger_box">
 							<span class="hamburger_inner"></span>
 						</span>
@@ -32,21 +31,21 @@
 					<div class="hero_text_wrapper">
 						<h1 class="hero_headline">
 							<span>Tworzenie stron</span>
-							<span>w <span> najlepszym</span></span>
+							<span>w najlepszym</span>
 							<span>wydaniu...</span>
 						</h1>
 						<p>...zobacz więcej</p>
+						<div class="scroll_to_about"><span class="chevron-down"></span></div>
 					</div>
 					<div class="hero_img_wrapper">
-						<img src="/img/heroSVG.svg" alt="person with smatphone image" />
+						<img src="./assets/images/heroSVG.svg" alt="person with smatphone image" />
 					</div>
-					<div class="scroll_to_about"><i class="icon-down-open"></i></div>
 				</section>
 				<section id="about_section" class="about">
 					<h2 class="about_headline headline">O mnie</h2>
 					<div class="about_content">
 						<div class="about_img_wrapper">
-							<img src="/img/aboutPhoto.jpg" alt="page author photo" />
+							<img src="./assets/images/aboutPhoto.jpg" alt="page author photo" />
 						</div>
 						<div class="about_text_wrapper">
 							<strong class="subheadline">Cześć!</strong>
@@ -138,7 +137,7 @@
 							<button type="submit" id="contact_form_submit" class="contact_form_item">Wyślij</button>
 						</form>
 						<div class="contact_img_wrapper">
-							<img src="/img/contactImage.png" alt="contact me image" />
+							<img src="./assets/images/contactImage.png" alt="contact me image" />
 						</div>
 					</div>
 				</section>
@@ -146,7 +145,7 @@
 			<footer class="footer">
 				<div class="footer_info_wrapper">
 					<span class="footer_logo">szymon.dev</span>
-					<p class="footer_description">Strona szymon.dev i wszystkie projekty zamieszczone na niej są w pełni zaprojektowane i zaimplementowane przez Szymona Dąbrowskiego.</p>
+					<p class="footer_description">Strona szymon.dev i wszystkie projekty zamieszczone na niej są w pełni zaprojektowane i zaimplementowane przeze mnie.</p>
 				</div>
 				<ul class="social_media">
 					<li class="social_media_label">Moje media</li>
@@ -160,7 +159,7 @@
 						<a title="Click to see profile" href="https://github.com/SzymonMiloszDabrowski">Github</a>
 					</li>
 				</ul>
-				<span class="footer_policy">&copy; 2022 Szymon Dąbrowski. All Rights Reserved.</span>
+				<span class="footer_policy">&copy; 2023 Szymon Dąbrowski. All Rights Reserved.</span>
 			</footer>
 		</div>
 	</body>
