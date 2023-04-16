@@ -48,16 +48,16 @@
 
 		&_links {
 			margin-bottom: 1em;
+		}
 
-			a {
-				color: $accent;
-				transition: all 0.2s;
+		&_link {
+			color: $accent;
+			transition: all 0.2s;
 
-				&:hover,
-				&:active,
-				&:target {
-					color: $darker;
-				}
+			&:hover,
+			&:active,
+			&:target {
+				color: $darker;
 			}
 		}
 
@@ -82,7 +82,7 @@
 
 			&_tech_item {
 				padding: 5px 8px;
-				background: $dark;
+				background: $darker;
 				color: $white;
 				border-radius: $border_radius;
 				font-weight: 700;

@@ -64,11 +64,6 @@
 			display: flex;
 			align-items: center;
 			height: 100%;
-			transform: translateY(4rem);
-		}
-
-		@include media-desktop {
-			transform: translateY(5.3rem);
 		}
 	}
 }

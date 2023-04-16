@@ -1,5 +1,5 @@
 # My Portfolio
 
-This is my simple portfolio page with my projects and form to contact. I decided to create this as simple as possible, that is why i used only HTML, Less and Javascript. I belive that decision also provide on better SEO and UX.
+The repository shows the code of my portfolio page which contains my projects and form to contact with me. I decided to create this page as simple as possible, that's why I used only HTML, Sass and Javascript. Additionally to help deploy the project I used webpack.
 
 [Go to page](https://szymon.debno.com/)
