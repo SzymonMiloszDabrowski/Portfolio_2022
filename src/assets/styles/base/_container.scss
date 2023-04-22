@@ -1,3 +1,5 @@
+@use '../mixins/breakpoints' as *;
+
 .container {
 	position: relative;
 	margin: 0 auto;

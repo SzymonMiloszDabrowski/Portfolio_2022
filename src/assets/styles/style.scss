@@ -1,13 +1,8 @@
-// Base
-@import './base/base.scss';
-
 // Sections
-@import './sections/header';
-@import './sections/hero_section';
-@import './sections/about_section';
-@import './sections/works_section';
-@import './sections/contact_section';
-@import './sections/footer';
+@use './sections/about_section';
+@use './sections/works_section';
+@use './sections/contact_section';
+@use './sections/footer';
 
 // Pages
 @import './sections/thankyou_page';

@@ -4,8 +4,21 @@
 	"description": "This is my simple portfolio page with my projects and form to contact. I decided to create this as simple as possible, that is why i used only HTML, Less and Javascript. I belive that decision also provide on better SEO and UX.",
 	"main": "index.js",
 	"scripts": {
-		"build": "webpack",
-		"dev": "webpack serve"
+		"build:sass": "sass src/assets/styles:public",
+		"copy:html": "copyfiles -u 1 ./src/*.html public",
+		"copy:js": "copyfiles -u 1 ./src/assets/scripts/*.js public",
+		"copy:assets": "copyfiles -u 1 ./src/assets/images/**/* public",
+		"copy": "npm-run-all --parallel copy:*",
+		"watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+		"watch:js": "onchange \"src/assets/scripts/*.js\" -- npm run copy:js",
+		"watch:assets": "onchange \"src/assets/images/**/*\" -- npm run copy:assets",
+		"watch:sass": "sass --watch src/assets/styles:public",
+		"watch": "npm-run-all --parallel watch:*",
+		"serve": "browser-sync start --server public --files public",
+		"start": "npm-run-all copy --parallel watch serve",
+		"build": "npm-run-all clean copy build:*",
+		"clean": "rd /s /q public",
+		"postbuild": "postcss public/*.css -u autoprefixer -r"
 	},
 	"repository": {
 		"type": "git",
@@ -19,19 +32,13 @@
 	},
 	"homepage": "https://szymon.debno.com/",
 	"devDependencies": {
-		"@babel/core": "^7.21.4",
-		"@babel/preset-env": "^7.21.4",
-		"babel-loader": "^9.1.2",
-		"css-loader": "^6.7.3",
-		"html-loader": "^4.2.0",
-		"html-webpack-plugin": "^5.5.0",
-		"mini-css-extract-plugin": "^2.7.5",
-		"postcss": "^8.4.21",
-		"postcss-loader": "^7.2.4",
-		"sass": "^1.61.0",
-		"sass-loader": "^13.2.2",
-		"webpack": "^5.78.0",
-		"webpack-cli": "^5.0.1",
-		"webpack-dev-server": "^4.13.2"
+		"autoprefixer": "^10.4.14",
+		"browser-sync": "^2.29.1",
+		"copyfiles": "^2.4.1",
+		"cssnano": "^6.0.0",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^7.1.0",
+		"postcss-cli": "^10.1.0",
+		"sass": "^1.61.0"
 	}
 }

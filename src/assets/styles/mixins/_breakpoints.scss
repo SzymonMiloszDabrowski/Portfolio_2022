@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 @mixin media-phone() {
 	//359px
 	@media (min-width: calc($media-phone-width - 1px)) {
