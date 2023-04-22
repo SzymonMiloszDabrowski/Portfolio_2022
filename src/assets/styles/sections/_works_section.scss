@@ -30,19 +30,9 @@
 			margin-bottom: 3rem;
 		}
 
-		&_top {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			&_name {
-				font-size: 1.8rem;
-				font-weight: 700;
-			}
-
-			&_status {
-				color: $accent;
-			}
+		&_top_name {
+			font-size: 1.8rem;
+			font-weight: 700;
 		}
 
 		&_description {
@@ -54,13 +44,17 @@
 		}
 
 		&_link {
-			color: $accent;
+			color: $white;
+			background-color: $black;
+			border-radius: $border_radius;
+			padding: 5px 8px;
 			transition: all 0.2s;
 
 			&:hover,
 			&:active,
 			&:target {
-				color: $darker;
+				color: $white;
+				opacity: 0.8;
 			}
 		}
 
@@ -85,8 +79,8 @@
 
 			&_tech_item {
 				padding: 5px 8px;
-				background: $darker;
-				color: $white;
+				color: $darker;
+				border: 2px solid $darker;
 				border-radius: $border_radius;
 				font-weight: 700;
 			}

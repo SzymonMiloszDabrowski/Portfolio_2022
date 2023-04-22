@@ -18,7 +18,7 @@
 		"start": "npm-run-all copy --parallel watch serve",
 		"build": "npm-run-all clean copy build:*",
 		"clean": "rd /s /q public",
-		"postbuild": "postcss public/*.css -u autoprefixer -r"
+		"postbuild": "postcss public/*.css -u autoprefixer cssnano -r"
 	},
 	"repository": {
 		"type": "git",
