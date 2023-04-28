@@ -1,5 +1,5 @@
 // Sections
-@use './sections/about_section';
-@use './sections/works_section';
-@use './sections/contact_section';
-@use './sections/footer';
+@use './sections';
+
+// Layout
+@use './layout/footer';

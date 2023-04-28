@@ -1,9 +1,6 @@
 // Base
-@use './base/fonts';
-@use './base/typography';
-@use './base/body';
-@use './base/container';
+@use './base';
 
-// Sections
-@use './sections/header';
+// Above the fold
+@use './layout/header';
 @use './sections/hero_section';

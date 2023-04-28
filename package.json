@@ -16,7 +16,8 @@
 		"watch": "npm-run-all --parallel watch:*",
 		"serve": "browser-sync start --server public --files public",
 		"start": "npm-run-all copy --parallel watch serve",
-		"build": "npm-run-all clean copy build:*",
+		"build": "npm-run-all copy build:*",
+		"cleanbuild": "npm-run-all clean copy build:*",
 		"clean": "rd /s /q public",
 		"postbuild": "postcss public/*.css -u autoprefixer cssnano -r"
 	},

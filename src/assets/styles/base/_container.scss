@@ -1,4 +1,4 @@
-@use '../mixins/breakpoints' as *;
+@use '../abstracts/breakpoints' as *;
 
 .container {
 	position: relative;

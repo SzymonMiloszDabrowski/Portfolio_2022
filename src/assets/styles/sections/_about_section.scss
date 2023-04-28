@@ -1,5 +1,4 @@
-@use '../base/variables' as *;
-@use '../mixins/breakpoints' as *;
+@use '../abstracts' as *;
 
 .about {
 	position: relative;

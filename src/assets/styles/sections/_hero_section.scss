@@ -1,5 +1,4 @@
-@use '../base/variables' as *;
-@use '../mixins/breakpoints' as *;
+@use '../abstracts' as *;
 
 .hero {
 	position: relative;
@@ -37,16 +36,16 @@
 			display: block;
 			width: 2.5rem;
 			height: 2.5rem;
-			border: solid $black;
+			border: solid $accent;
 			border-width: 0 5px 5px 0;
 			transform: rotate(45deg);
-			transition: border-color 0.2s;
+			transition: border-color 0.3s;
 			cursor: pointer;
 
 			&:hover,
 			&:active,
 			&:target {
-				border-color: $accent;
+				border-color: $black;
 			}
 		}
 	}

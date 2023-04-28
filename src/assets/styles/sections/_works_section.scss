@@ -1,5 +1,4 @@
-@use '../base/variables' as *;
-@use '../mixins/breakpoints' as *;
+@use '../abstracts' as *;
 
 .works {
 	&_content {
@@ -48,7 +47,7 @@
 			background-color: $black;
 			border-radius: $border_radius;
 			padding: 5px 8px;
-			transition: all 0.2s;
+			transition: all 0.3s;
 
 			&:hover,
 			&:active,
