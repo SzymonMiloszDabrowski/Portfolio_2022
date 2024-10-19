@@ -9,7 +9,7 @@
 			content="Tworzenie stron w najlepszym wyadniu! Sprawdź projekty stron i aplikacji internetowych. Webdeveloper Szymon Dąbrowski"
 		/>
 		<title>Szymon Dąbrowski - Portfolio</title>
-		<link href="./assets/images/heroSVG.svg" rel="preload" as="image" type="image/svg" fetchpriority="high" />
+		<link href="./assets/images/heroSVG.svg" rel="preload" as="image" type="image/svg+xml" fetchpriority="high" />
 		<link
 			href="https://fonts.gstatic.com/s/alegreyasans/v24/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEp2iw.woff2"
 			rel="preload"
@@ -38,7 +38,7 @@
 			type="font/woff2"
 			crossorigin="anonymous"
 		/>
-		<link rel="icon" href="./assets/images/favicon.svg" type="image/svg" />
+		<link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
 		<meta name="theme-color" content="#f9f4ef" />
 		<link rel="stylesheet" href="critical.css" />
 		<script defer src="./assets/scripts/script.js"></script>
@@ -74,7 +74,7 @@
 					<div class="hero_img_wrapper">
 						<img
 							src="./assets/images/heroSVG.svg"
-							type="image/svg"
+							type="image/svg+xml"
 							width="683"
 							height="600"
 							alt="person with smatphone"
@@ -250,18 +250,14 @@
 							<button type="submit" id="contact_form_submit" class="contact_form_item">Wyślij</button>
 						</form>
 						<div class="contact_img_wrapper">
-							<picture>
-								<source srcset="./assets/images/contactImage.avif" type="image/avif" />
-								<source srcset="./assets/images/contactImage.webp" type="image/webp" />
-								<img
-									src="./assets/images/contactImage.png"
-									type="image/png"
-									width="598"
-									height="405"
-									alt="person writing the message"
-									loading="lazy"
-								/>
-							</picture>
+							<img
+								src="./assets/images/contactImage.svg"
+								type="image/svg+xml"
+								width="598"
+								height="407"
+								alt="person writing the message"
+								loading="lazy"
+							/>
 						</div>
 					</div>
 				</section>
@@ -304,7 +300,9 @@
 						>
 					</li>
 				</ul>
-				<span class="footer_policy">&copy; 2023 Szymon Dąbrowski. All Rights Reserved.</span>
+				<div class="footer_policy">
+					&copy; <span data-current-year>2024</span> Szymon Dąbrowski. All Rights Reserved.
+				</div>
 			</footer>
 		</div>
 	</body>

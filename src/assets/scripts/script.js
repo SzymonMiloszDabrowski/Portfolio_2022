@@ -14,6 +14,10 @@ const App = {
 		nav.classList.toggle('toggled');
 	},
 
+	handleYearChange: function () {
+		document.querySelector('[data-current-year]').textContent = new Date().getFullYear();
+	},
+
 	listenEvents: function () {
 		document.querySelectorAll('.scroll_to_about').forEach((el) => {
 			el.addEventListener('click', () => {
@@ -56,6 +60,7 @@ const App = {
 
 	init: function () {
 		this.listenEvents();
+		this.handleYearChange();
 	},
 };
 
